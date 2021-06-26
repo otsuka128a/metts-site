@@ -1,0 +1,143 @@
+.create-top {
+    @include overTab {
+        margin-top: 60px;
+    }
+    margin-top: 0;
+    position: relative;
+    z-index: 2;
+    .bg-square {
+        @include overTab {
+            width: 215px;
+            height: 211px;
+            opacity: 0.8;
+            background-size: 35px 35px;
+            background-image: radial-gradient(cl(white) 25%, cl(bright-yellow) 20%);
+            position: absolute;
+            top: 35px;
+            z-index: -1;
+        }
+    }
+    .title-decoration {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        @include overTab {
+            text-align: start;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 50px;
+        }
+        .title-decoration-sub {
+            text-align: left;
+            margin: 20px 0;
+            @include overTab {
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .manufacturing {
+        @include overTab {
+            order: 2;
+            width: 400px;
+            margin: 0;
+        }
+        width: 250px;
+        margin: 30px auto;
+        order: -2;
+    }
+}
+
+.create-area {
+    @include overTab {
+        margin-top: 80px;
+        background-color: cl(gray);
+        position: relative;
+    }
+    .bg-square-large {
+        @include overTab {
+            width: 411px;
+            height: 419px;
+            opacity: 0.8;
+            background-size: 35px 35px;
+            background-image: radial-gradient(cl(white) 25%, cl(bright-yellow) 20%);
+            position: absolute;
+            top: 220px;
+            right: 95px;
+        }
+    }
+    .create-box-area {
+        display: flex;
+        flex-wrap: wrap;
+        @include overTab {
+            margin: 0 30px;
+        }
+        .create-box-1 {
+            line-height: 0;
+            margin-bottom: 40px;
+            @include overTab {
+                flex-grow: 1;
+                z-index: 3;
+                margin-right: 15px;
+                margin: 0 15px;
+                margin-top: -15px;
+                margin-bottom: 80px;
+            }
+        }
+        .create-box-2 {
+            line-height: 0;
+            margin-bottom: 40px;
+            @include overTab {
+                flex-grow: 1;
+                z-index: 3;
+                margin-left: 15px;
+                margin: 0 15px;
+                margin-top: -30px;
+                margin-bottom: 0;
+            }
+        }
+        .create-box-3 {
+            line-height: 0;
+            margin-bottom: 40px;
+            @include overTab {
+                flex-grow: 1;
+                z-index: 3;
+                margin-left: 15px;
+                margin: 0 15px;
+                margin-top: 50px;
+                margin-bottom: 0;
+            }
+        }
+        .create-box-4 {
+            line-height: 0;
+            margin-bottom: 40px;
+            @include overTab {
+                flex-grow: 1;
+                z-index: 3;
+                margin-right: 15px;
+                margin: 0 15px;
+                margin-top: 30px;
+                margin-bottom: 45px;
+            }
+        }
+        .create-text {
+            background-color: cl(darkblue);
+            color: cl(white);
+            padding: 30px 20px;
+            .create-title {
+                @include overTab {
+                    font-size: 26px;
+                }
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-bottom: 25px;
+                font-size: 17px;
+            }
+            .create-sub {
+                opacity: 0.8;
+                font-size: 12px;
+            }
+        }
+    }
+}

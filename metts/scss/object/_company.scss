@@ -1,0 +1,116 @@
+.company-area {
+    @include overTab {
+        margin: 80px 0;
+    }
+    margin: 40px 0;
+}
+
+.company-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    .company-title {
+        @include overTab {
+            order: 1;
+            margin: 0;
+            width: auto;
+            padding-top: 40px;
+        }
+        width: 100%;
+        padding-top: 0;
+    }
+    .our-company {
+        @include overTab {
+            order: 2;
+            margin: 0;
+            width: 350px;
+        }
+        margin: 0 auto;
+        order: -1;
+        width: 200px;
+    }
+}
+
+.company-bg {
+    @include overTab {
+        background-image: url(../img/technolory.png);
+        background-color:rgba(255,255,255,0.9);
+        background-blend-mode:lighten;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.company-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    line-height: 2.5;
+    @include overTab {
+        width: 80%;
+    margin: 0 auto;
+    }
+
+    .list-left {
+        @include overTab {
+            width: 140px;
+            font-weight: normal;
+        }
+        width: 100%;
+        font-weight: bold;
+    }
+    .margin-l span {
+        margin-left: 40px;
+    }
+    .m-left span {
+        @include overTab {
+            margin-left: 30px;
+        }
+        margin-left: 0;
+    }
+}
+
+.border {
+    border-bottom: 1px solid #000;
+}
+
+.rise {
+    @include overTab {
+        visibility: visible;
+        height: 60px;
+        line-height: 60px;
+        background-color: cl(blue);
+        color: cl(white);
+        text-align: center;
+        letter-spacing: 10px;
+        cursor: pointer;
+        span {
+            margin-left: 10px;
+        }
+    }
+    visibility:hidden;
+}
+
+/* 上に戻るボタン */
+.pagetop {
+	color: #fff;
+    background-color: cl(black);
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+	width: 3.3rem;
+	height: 3.3rem;
+	line-height: 3.3rem;
+    border: solid 1px cl(white);
+	text-align: center;
+	cursor: pointer;
+}
+
+.pagetop:hover {
+	color: #fff !important;
+	text-decoration: none;
+}

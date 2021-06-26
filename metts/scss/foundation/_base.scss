@@ -1,0 +1,43 @@
+// COLORS
+// @inlcude cl(black);
+//--------------------------------------------------
+
+$colors: (
+	white: #fff,
+	black: #333333,
+	bright-yellow: #FCF6A7,
+    yellow: #FFE200,
+	blue: #0088FF,
+	darkblue: #004683,
+	gray: #DEDEDE,
+);
+
+@function cl($key) {
+	@return map-get($colors, $key);
+}
+
+// RESPONSIVE
+// @include overTab
+//--------------------------------------------------
+
+@mixin overTab {
+	@media print,screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+// UTILITY
+//--------------------------------------------------
+
+._sp {
+	@include overTab {
+		display: none;
+	}
+}
+
+._pc {
+	display: none;
+	@include overTab {
+		display: block;
+	}
+}

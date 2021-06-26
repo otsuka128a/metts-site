@@ -1,0 +1,48 @@
+.footer {
+    background-color: cl(black);
+    color: cl(white);
+    padding: 40px 0;
+    .company-name-area {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        font-size: 32px;
+        .company-name {
+            @include overTab {
+                width: auto;
+                margin: 0;
+            }
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+            order: 2;
+            line-height: 50px;
+            font-weight: bold;
+        }
+        .footer-logo {
+            @include overTab {
+                margin: 0;
+                margin-right: 40px;
+            }
+            width: 126px;
+            height: 50px;
+            order: 1;
+            margin: 0 auto;
+        }
+    }
+    .contact-area {
+        display: flex;
+        flex-wrap: wrap;
+        .contact span {
+            margin-left: 30px;
+        }
+        .tel {
+            @include overTab {
+                margin-left: 40px;
+            }
+        }
+    }
+    .copy {
+        margin-top: 20px;
+    }
+}
